@@ -686,6 +686,7 @@ footer .attribution a {
   }
   .each-feat {
     width: 23%;
+    padding-bottom: 0;
   }
 
   /*
