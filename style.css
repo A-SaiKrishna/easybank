@@ -302,7 +302,7 @@ INTRO
   /* height: 100vh; */
   background-image: url("./images/bg-intro-mobile.svg");
   background-position: top right;
-  background-size: 100% 40%;
+  background-size: 100% 56%;
   background-repeat: no-repeat;
   overflow: hidden;
 }
