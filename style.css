@@ -186,6 +186,9 @@ p {
   text-align: center;
   line-height: 1.3em;
 }
+/* footer .green-icon {
+  visibility: hidden; */
+/* } */
 /*  
 -----------------------
 
@@ -537,6 +540,20 @@ footer .attribution a {
   .menu li {
     margin-left: 1.1rem;
     margin-right: 1.1rem;
+    padding-bottom: 1rem;
+  }
+  .menu li:hover {
+    border-bottom: solid;
+    border-image: linear-gradient(
+      to right,
+
+      var(--lime-green),
+      var(--bright-cyan)
+    );
+    border-image-slice: 1;
+  }
+  .hamburg input {
+    z-index: -1;
   }
   .menu li a {
     color: var(--grayish-blue);
@@ -716,6 +733,10 @@ footer .attribution a {
   .article h2 {
     font-size: 1.35rem;
   }
+  .article h2:hover {
+    color: var(--lime-green);
+    cursor: pointer;
+  }
   .article p {
     font-size: 1rem;
   }
@@ -738,7 +759,12 @@ footer .attribution a {
     display: flex;
     justify-content: space-between;
   }
-
+  footer .white-icon:hover {
+    visibility: hidden;
+  }
+  footer .white-icon:hover ~ .green-icon {
+    visibility: visible;
+  }
   .footer-logo {
     display: flex;
     flex-direction: column;
@@ -777,5 +803,32 @@ footer .attribution a {
   footer .about {
     text-align: left;
     line-height: 1.67rem;
+  }
+  /* footer .white-icon {
+    display: none;
+  } */
+  /* footer .social-media li a img {
+    transition: transform 0.1s ease-in-out;
+  } */
+  /* footer .social-media li a img:hover {
+    content: url("./images/green-icon-facebook.svg");
+  } */
+  .social-media #fb:hover img {
+    content: url("./images/green-icon-facebook.svg");
+  }
+  .social-media #yt:hover img {
+    content: url("./images/green-icon-youtube.svg");
+  }
+  .social-media #tr:hover img {
+    content: url("./images/green-icon-twitter.svg");
+  }
+  .social-media #pin:hover img {
+    content: url("./images/green-icon-pinterest.svg");
+  }
+  .social-media #insta:hover img {
+    content: url("./images/green-icon-instagram.svg");
+  }
+  .desktop-abt a:hover {
+    color: var(--lime-green);
   }
 }
